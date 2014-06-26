@@ -12,3 +12,7 @@ This got my apache one.
 I am still running into errors on the sample code, but hopefully we can get this going.
 
 
+** 6/26/2014
+Just updating text file - Ryan Lee
+** If you want to download the jdbc.jar file:
+http://www.java2s.com/Code/Jar/j/Downloadjdbcjar.htm
