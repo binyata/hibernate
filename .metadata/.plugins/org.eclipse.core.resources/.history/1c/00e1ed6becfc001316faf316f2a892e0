@@ -1,0 +1,16 @@
+package hib;
+
+import java.sql.Date;
+
+@Entity
+@Table(name = "video_info")
+public class user {
+
+	
+	
+	@Id
+	@GeneratedValue
+	private Integer id;
+	private String video_title;
+	private Date broad_cast;
+}
