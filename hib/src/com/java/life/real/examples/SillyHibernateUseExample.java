@@ -13,7 +13,7 @@ import org.hibernate.Transaction;
 import org.hibernate.Query;
 import org.apache.log4j.Logger;
 public class SillyHibernateUseExample {
-final static Logger logger = Logger.getLogger(ExampleApplication.class);
+//final static Logger logger = Logger.getLogger(ExampleApplication.class);
 private List<User> users;
 public SillyHibernateUseExample() {
 // TODO Auto-generated constructor stub
@@ -60,8 +60,8 @@ transaction.commit();
 * prove that the User instances were added to the database and that
 * the instances were each updated with a database generated id.
 */
-System.out.println("aUser generated ID is: " + aUser.getId());
-System.out.println("anotherUser generated ID is: " + anotherUser.getId());
+System.out.println("aUser generated ID is: " + aNameUser.getId());
+System.out.println("anotherUser generated ID is: " + leeUser.getId());
 }
 /*
 * show how to get a collection of type List containing all of the records in the app_user table
@@ -142,7 +142,7 @@ User aNameUser = (User)aNameQuery.uniqueResult();
 /*
 * add the shared phone number to the joshuaUser
 */
-Set<PhoneNumber> joshuaPhoneNumbers = firstUser.getPhoneNumbers();
+Set<PhoneNumber> joshuaPhoneNumbers = joshuaUser.getPhoneNumbers();
 joshuaPhoneNumbers.add(sharedPhoneNumber);
 /*
 * set the single phone number to be used by more than one User

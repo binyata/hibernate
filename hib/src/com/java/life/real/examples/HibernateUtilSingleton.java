@@ -14,7 +14,7 @@ Configuration config = new Configuration();
 config.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 config.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
 //change the next line of code to match your MySQL url
-config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost/test");
+config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/test");
 //change the next two lines of code to match your MySQL user name and password.
 config.setProperty("hibernate.connection.username", "dude");
 config.setProperty("hibernate.connection.password", "hey2dude");
